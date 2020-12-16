@@ -15,8 +15,8 @@
       <div class="mcollapse navbar-collapse collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             {% for item in items %}
-            <li class="nav-item" {% if item.url == page.url %} class="active"{% endif %}>
-                <a href="{{ item.link }}" class="nav-link{% if page.url == item.link %} active{% endif %}">
+            <li class="nav-item">
+                <a href="{{site.baseurl}}{{ item.link }}" class="nav-link{% if page.url == item.link %} active{% endif %}">
                     {{ item.name }}
                 </a>
             </li>
